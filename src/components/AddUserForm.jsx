@@ -11,6 +11,7 @@ const AddUserForm = (props) => {
   const onSubmit = (data, e) => {
     e.target.reset();
     props.addUser(data);
+    localStorage.setItem(data.id, JSON.stringify(data));
   };
 
   return (

@@ -14,7 +14,9 @@ const EditUserForm = (props) => {
 
   const onSubmit = (data, e) => {
     e.target.reset();
-    props.updateUser(props.currentUser.id, data)
+    props.updateUser(props.currentUser.id, data);
+    localStorage.removeItem(data.id);
+    localStorage.setItem(data.id, JSON.stringify(data));
   };
 
   return (

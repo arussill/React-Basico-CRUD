@@ -4,11 +4,6 @@ import { EditUserForm } from "./components/EditUserForm";
 import { UserTable } from "./components/UserTable";
 
 function App() {
-  const userData = [
-    { id: 1, name: "Tania", username: "flopidiskette" },
-    { id: 2, name: "Craig", username: "siliconaidolon" },
-    { id: 3, name: "Ben", username: "bonisphere" },
-  ];
 
   const addUser = (user) => {
     user.id = users.length + 1;
@@ -16,10 +11,11 @@ function App() {
   };
 
   const deleteUser = (id) => {
+    localStorage.removeItem(id)
     setUsers(users.filter((user) => user.id !== id)); //Regresa un array donde el id sea distinto al user.id
   };
 
-  const [users, setUsers] = useState(userData);
+  const [users, setUsers] = useState("");
 
   //Editar
   const [editing, setEditing] = useState(false);
