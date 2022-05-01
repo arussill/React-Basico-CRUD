@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
+// Hook form
 const EditUserForm = (props) => {
   const {
     register,
@@ -13,6 +14,7 @@ const EditUserForm = (props) => {
   setValue("lastname", props.currentUser.lastname);
   setValue("username", props.currentUser.username);
 
+  // Se activa cuando se da click a edit en el form también edita el localStorage
   const onSubmit = (data, e) => {
     e.target.reset();
     props.updateUser(props.currentUser.id, data);

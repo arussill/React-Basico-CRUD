@@ -2,12 +2,14 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 const AddUserForm = (props) => {
+  // Hook form
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
+  // funcion que se activa al onsubmit el form y agrega los datos al localStorage
   const onSubmit = (data, e) => {
     e.target.reset();
     props.addUser(data);
