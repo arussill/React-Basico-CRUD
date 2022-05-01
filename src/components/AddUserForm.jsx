@@ -35,7 +35,7 @@ const AddUserForm = (props) => {
           required: { value: true, message: "Campo Requerido" },
         })}
       />
-      <div>{errors?.name?.message}</div>
+      <div>{errors?.lastname?.message}</div>
       <label htmlFor="">Username</label>
       <input
         type="text"

@@ -33,6 +33,7 @@ const EditUserForm = (props) => {
         })}
       />
       <div>{errors?.name?.message}</div>
+
       <label htmlFor="">Last Name</label>
       <input
         type="text"
@@ -41,7 +42,7 @@ const EditUserForm = (props) => {
           required: { value: true, message: "Campo Requerido" },
         })}
       />
-      <div>{errors?.name?.message}</div>
+      <div>{errors?.lastname?.message}</div>
       <label htmlFor="">Username</label>
       <input
         type="text"
