@@ -6,6 +6,7 @@ const UserTable = (props) => {
       <thead>
         <tr>
           <th>Name</th>
+          <th>Last Name</th>
           <th>User</th>
           <th>Actions</th>
         </tr>
@@ -15,6 +16,7 @@ const UserTable = (props) => {
           props.users.map((user) => (
             <tr key={user.id}>
               <td>{user.name}</td>
+              <td>{user.lastname}</td>
               <td>{user.username}</td>
               <td>
                 <button

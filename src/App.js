@@ -23,6 +23,7 @@ function App() {
   const [currentUser, setCurrentUser] = useState({
     id: null,
     name:'',
+    lastname:'',
     username:''
   });
 
@@ -31,6 +32,7 @@ function App() {
     setCurrentUser({
       id: user.id,
       name: user.name,
+      lastname: user.lastname,
       username: user.username
     });
   };

@@ -25,6 +25,15 @@ const AddUserForm = (props) => {
         })}
       />
       <div>{errors?.name?.message}</div>
+      <label htmlFor="">Last Name</label>
+      <input
+        type="text"
+        name="lastname"
+        {...register("lastname", {
+          required: { value: true, message: "Campo Requerido" },
+        })}
+      />
+      <div>{errors?.name?.message}</div>
       <label htmlFor="">Username</label>
       <input
         type="text"

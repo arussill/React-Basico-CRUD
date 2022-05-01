@@ -10,6 +10,7 @@ const EditUserForm = (props) => {
   } = useForm({ defaultValues: props.currentUser });
 
   setValue("name", props.currentUser.name);
+  setValue("lastname", props.currentUser.lastname);
   setValue("username", props.currentUser.username);
 
   const onSubmit = (data, e) => {
@@ -26,6 +27,15 @@ const EditUserForm = (props) => {
         type="text"
         name="name"
         {...register("name", {
+          required: { value: true, message: "Campo Requerido" },
+        })}
+      />
+      <div>{errors?.name?.message}</div>
+      <label htmlFor="">Last Name</label>
+      <input
+        type="text"
+        name="lastname"
+        {...register("lastname", {
           required: { value: true, message: "Campo Requerido" },
         })}
       />
