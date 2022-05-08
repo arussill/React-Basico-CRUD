@@ -69,6 +69,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+##Preguntas
+
+¿Qué es el localStorage?
+
+-Es un objeto Storage, permite el almacenamiento de los datos de manera local en el navegador si la necesidad de una conexión a base de datos.
+
+¿Qué es CRUD?
+
+-Hace referencia a Create (Crear), Read (Leer), Update (Actualizar), Delete (Borrar), funciones que se requieren para el gestionamiento de datos.
+
 
 # VIDEO EXPLICATIVO DE LAS MODIFICACIONES
 https://drive.google.com/file/d/14GY8H_JR93iletj6Bj3ONgnmuDh219HX/view?usp=sharing
